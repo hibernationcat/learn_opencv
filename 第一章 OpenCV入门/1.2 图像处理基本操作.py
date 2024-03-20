@@ -29,9 +29,15 @@ cv2.destroyWindow(winname)
 # 5.销毁所有窗口
 cv2.destroyAllWindows() 
 
-# 1.2.3 保存图像
+# 1.2.3 保存图像 不会自动创建文件夹
 def savePic():
     grayscalePic = cv2.imread(kitty_pic,cv2.IMREAD_GRAYSCALE)
     isSave = cv2.imwrite("./temp/save.png",grayscalePic)
 
 savePic()
+
+'''1.3 OpenCV贡献库
+    两部分：
+    · OpenCV主库
+    · 贡献库：扩展模块 opencv-contrib-python
+'''
